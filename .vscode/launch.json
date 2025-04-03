@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/my/Documents/GitHub/Microcontrollers-and-programming-/Lab2",
+      "program": "/Users/my/Documents/GitHub/Microcontrollers-and-programming-/Lab2/build/Debug/outDebug"
+    }
+  ]
+}
