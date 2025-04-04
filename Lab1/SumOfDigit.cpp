@@ -2,15 +2,15 @@
 using namespace std;
 
 int main() {
-    int n, sum = 0;
-    cout << "Enter a number: ";
-    cin >> n;
+    int num, sum = 0;
 
-    while (n > 0) {
-        sum += n % 10; 
-        n /= 10;       
+    cout << "Enter a value: ";
+    cin >> num;
+
+    for (; num > 0; num /= 10) {  
+        sum += num % 10;  
     }
 
-    cout << "Sum of digits: " << sum << endl;
+    cout << "Sum is: " << sum << endl;
     return 0;
 }
