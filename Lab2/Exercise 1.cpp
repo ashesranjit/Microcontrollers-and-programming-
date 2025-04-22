@@ -22,7 +22,8 @@ int multiply(int a, int b) {
             return static_cast<int>(result);
         }
         
-    int main (){
+    int main ()
+    {
         
         int intResult = multiply(5, 4);
         cout << "Result of multiplying two integers: "<< intResult << endl;

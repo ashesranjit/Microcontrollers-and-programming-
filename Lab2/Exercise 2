@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+void swapwithout(float a, float b) {
+    float temp;
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "After swapping without reference: a = " << a << ", b = " << b << endl;
+}
+void swapwith(float* a, float* b) {
+    float temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+
+    cout << "After swapping with reference: a = " << *a << ", b = " << *b << endl;
+}
+void swapwithreference(float *a, float *b) {
+    float temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+
+    cout << "After swapping with reference: a = " << a << ", b = " << b << endl;
+}
+int main() {
+    float a = 5.0, b = 10.0;
+
+    cout << "Before swapping: a = " << a << ", b = " << b << endl;
+
+    swapwithout(a, b);
+    cout << "After swapping without reference: a = " << a << ", b = " << b << endl;
+
+    swapwith(*a, *b);
+    cout << "After swapping with reference: a = " << *a << ", b = " << *b << endl;
+
+    swapwithreference(a, b);
+    cout << "After swapping with reference: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
